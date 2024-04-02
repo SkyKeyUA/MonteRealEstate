@@ -1,0 +1,66 @@
+.root {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 40px 40px 20px;
+  gap: 70px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner_left {
+  flex: 0 0 50%;
+}
+.logo {
+}
+.body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.svg {
+  height: 46px;
+  width: 46px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map {
+  background: var(--icon-bg);
+}
+.burger {
+  background: var(--icon-bg);
+}
+.inner_right {
+  flex: 0 0 45%;
+}
+.items {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+.item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--primary);
+  max-width: 190px;
+}
+.favourite {
+  background: inherit;
+  border: 1px solid var(--primary);
+}
+.house {
+  background: var(--primary);
+}
