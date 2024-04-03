@@ -20,9 +20,8 @@ export const MainSliderComponent: React.FC<MainSliderProps> = () => {
         loop
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
         }}
+        speed={2000}
         initialSlide={0}
         modules={[Autoplay]}>
         {items.map(({ image }, i) => (

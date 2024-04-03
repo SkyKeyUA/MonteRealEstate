@@ -1,10 +1,13 @@
 .container {
+  padding: 10px;
   @media (min-width: 767.98px) {
     display: flex;
     justify-content: space-between;
     gap: 2.8%;
   }
-  padding: 0px 15px;
+  @media (max-width: 767.98px) {
+    padding: 15px;
+  }
 }
 
 .inner {
