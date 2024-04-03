@@ -1,0 +1,136 @@
+.inner {
+  position: relative;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.top {
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 479.97px) {
+    padding: 15px;
+  }
+}
+.bottom {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  @media (max-width: 479.97px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0px;
+    bottom: 0px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+.hidden {
+  @media (min-width: 479.98px) {
+    display: none;
+  }
+  @media (max-width: 479.98px) {
+    font-size: 16px;
+    max-width: 140px;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--primary);
+  }
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--primary);
+    max-width: 190px;
+  }
+  @media (min-width: 479.98px) {
+    width: 415px;
+  }
+  @media (max-width: 479.98px) {
+    span {
+      font-size: 16px;
+      max-width: 140px;
+      display: none;
+    }
+  }
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.favourite {
+  background: inherit;
+  border: 1px solid var(--primary);
+  @media (max-width: 479.98px) {
+    svg {
+      width: 17.2px;
+      height: 15px;
+    }
+  }
+}
+.house {
+  background: var(--primary);
+  @media (max-width: 479.98px) {
+    svg {
+      width: 15.41px;
+      height: 15px;
+    }
+  }
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 20px;
+  width: 167px;
+  height: 78px;
+  background: var(--body-color);
+  @media (max-width: 479.98px) {
+    width: 125px;
+    height: 56px;
+    border-radius: 10px;
+  }
+}
+.item {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 80px;
+  @media (max-width: 479.98px) {
+    font-size: 14px;
+  }
+}
+.download {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--download-bg);
+  @media (max-width: 479.98px) {
+    width: 28px;
+    height: 27px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

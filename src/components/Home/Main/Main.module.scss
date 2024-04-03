@@ -1,0 +1,129 @@
+.container {
+  @media (min-width: 767.98px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.8%;
+  }
+  padding: 0px 15px;
+}
+
+.inner {
+  flex: 0 0 47.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 991.98px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 139px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  @media (max-width: 479.98px) {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+}
+.title {
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+  max-width: 581px;
+  @media (max-width: 991.98px) {
+    font-size: 36px;
+    max-width: 323px;
+  }
+  @media (max-width: 767.98px) {
+    margin-bottom: 25px;
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 767.98px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.btn {
+  font-size: 18px;
+  border-radius: 80px;
+  width: 196px;
+  height: 45px;
+  background: var(--btn-bg);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  span {
+    color: var(--primary);
+  }
+  @media (max-width: 479.98px) {
+    font-size: 16px;
+    gap: 8px;
+    width: 171px;
+    height: 40px;
+  }
+}
+.svg_phone {
+  width: 37px;
+  height: 37px;
+  padding: 9px;
+  border-radius: 50%;
+  background: var(--phone-bg);
+  @media (max-width: 479.98px) {
+    width: 34px;
+    height: 34px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+.interior {
+  @media (min-width: 767.98px) {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+}
+.text {
+  max-width: 92px;
+  font-size: 14px;
+  line-height: 120%;
+  margin-right: 15px;
+}
+
+.image {
+  position: relative;
+  img {
+    border-radius: 50%;
+  }
+}
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--arrow-bg);
+}
