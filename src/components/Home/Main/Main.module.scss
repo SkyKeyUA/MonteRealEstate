@@ -75,6 +75,9 @@
   align-items: center;
   padding: 4px;
   gap: 10px;
+  animation-name: fullWidth;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   span {
     white-space: nowrap;
     color: var(--primary);
@@ -130,4 +133,34 @@
   padding: 7px;
   border-radius: 50%;
   background: var(--arrow-bg);
+}
+@media (min-width: 479.98px) {
+  @keyframes fullWidth {
+    0% {
+      width: 45px;
+      transform: scale(0);
+    }
+    50% {
+      width: 45px;
+      transform: scale(1);
+    }
+    100% {
+      width: 196px;
+    }
+  }
+}
+@media (max-width: 479.98px) {
+  @keyframes fullWidth {
+    0% {
+      width: 45px;
+      transform: scale(0);
+    }
+    50% {
+      width: 45px;
+      transform: scale(1);
+    }
+    100% {
+      width: 171px;
+    }
+  }
 }

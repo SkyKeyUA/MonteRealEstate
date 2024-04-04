@@ -16,7 +16,7 @@ export const MainComponent = () => {
           </h1>
         </div>
         <div className={styles.bottom}>
-          <button className={`${styles.btn} fullWidthAnimation`}>
+          <button className={`${styles.btn}`}>
             <div className={styles.svg_phone}>
               <svg
                 width="21"
