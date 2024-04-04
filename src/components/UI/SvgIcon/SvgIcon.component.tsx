@@ -1,14 +1,14 @@
-import classNames from "classnames";
-import { ReactSVG } from "react-svg";
+import classNames from 'classnames';
+import { ReactSVG } from 'react-svg';
 
-import { SvgIconProps } from "./SvgIcon.types";
+import { SvgIconProps } from './SvgIcon.types';
 
-import styles from "./SvgIcon.module.scss";
+import styles from './SvgIcon.module.scss';
 
 export const SvgIconComponent = ({
   src,
   size = 24,
-  rotate = "0",
+  rotate = '0',
   className,
   style,
   onClick,
@@ -19,7 +19,7 @@ export const SvgIconComponent = ({
     {
       [styles[`svgIcon_rotate_${rotate}`]]: rotate,
     },
-    className
+    className,
   );
 
   const customStyles = {
@@ -29,14 +29,8 @@ export const SvgIconComponent = ({
   };
 
   return (
-    <ReactSVG
-      src={src}
-      className={svgIconClass}
-      onClick={onClick}
-      style={customStyles}
-      {...rest}
-    />
+    <ReactSVG src={src} className={svgIconClass} onClick={onClick} style={customStyles} {...rest} />
   );
 };
 
-SvgIconComponent.displayName = "SvgIcon";
+SvgIconComponent.displayName = 'SvgIcon';
