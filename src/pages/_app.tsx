@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { AppProps } from 'next/app';
 
 import MainLayout from '@layouts/MainLayout';
@@ -21,10 +21,11 @@ export default function App({ Component, router, ...rest }: AppProps) {
     };
   }, []);
   return (
-    <Suspense fallback={<Loader loading={loading} />}>
+    <>
       <MainLayout>
         <Component {...rest} />
       </MainLayout>
-    </Suspense>
+      <Loader loading={loading} />
+    </>
   );
 }

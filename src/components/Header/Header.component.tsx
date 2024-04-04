@@ -5,6 +5,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import { IconsEnum, SvgIcon } from '@components/UI/SvgIcon';
 
 export const HeaderComponent: React.FC = () => {
   return (
@@ -47,32 +48,7 @@ export const HeaderComponent: React.FC = () => {
             </svg>
           </button>
           <button className={`${styles.burger} icon scaleAnimation`}>
-            <svg
-              width="23"
-              height="16"
-              viewBox="0 0 23 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M22.0013 5.66699H5.66797"
-                stroke="#232323"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path d="M22 1H1" stroke="#232323" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M22 10.3335H1"
-                stroke="#232323"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22.0013 15H5.66797"
-                stroke="#232323"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <SvgIcon src={IconsEnum.burger} size={14.6} />
           </button>
         </div>
       </div>
