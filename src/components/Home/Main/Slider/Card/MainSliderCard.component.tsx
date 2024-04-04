@@ -16,12 +16,8 @@ export const MainSliderCardComponent: React.FC<ItemProps> = ({ image }) => {
       />
       <div className={styles.top}>
         <div className={styles.info}>
-          <span className="slideUpAnimation repeatAnimation">
-            More than 1500 real estate properties
-          </span>
-          <span className="slideUpAnimation repeatAnimation">
-            From $145,000 with a yield of 10% per annum
-          </span>
+          <span className="slideUpAnimation">More than 1500 real estate properties</span>
+          <span className="slideUpAnimation">From $145,000 with a yield of 10% per annum</span>
         </div>
         <div className={styles.icons}>
           <button className={`${styles.favourite} icon scaleAnimation`}>

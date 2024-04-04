@@ -10,6 +10,7 @@ export enum IconsEnum {
   phone = '/images/icons/phone.svg',
   arrow = '/images/icons/arrow.svg',
   download = '/images/icons/download.svg',
+  loader = '/images/icons/loader.svg',
 }
 
 export type SvgIconProps = {
