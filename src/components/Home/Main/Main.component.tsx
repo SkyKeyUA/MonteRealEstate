@@ -10,11 +10,13 @@ export const MainComponent = () => {
       <div className={styles.inner}>
         <div className={styles.empty}></div>
         <div className={styles.body}>
-          <h2 className={styles.subtitle}>Building Your Dreams</h2>
-          <h1 className={styles.title}>Real Estate in Dubai: Ideal for Living and Investing</h1>
+          <h2 className={`${styles.subtitle} slideDownAnimation`}>Building Your Dreams</h2>
+          <h1 className={`${styles.title} slideUpAnimation`}>
+            Real Estate in Dubai: Ideal for Living and Investing
+          </h1>
         </div>
         <div className={styles.bottom}>
-          <button className={styles.btn}>
+          <button className={`${styles.btn} fullWidthAnimation`}>
             <div className={styles.svg_phone}>
               <svg
                 width="21"
@@ -34,8 +36,8 @@ export const MainComponent = () => {
             <span>Contact Us Now</span>
           </button>
           <div className={styles.interior}>
-            <div className={styles.text}>Explore All Our Properties</div>
-            <div className={styles.image}>
+            <div className={`${styles.text} slideInLeftAnimation`}>Explore All Our Properties</div>
+            <div className={`${styles.image} scaleAnimation`}>
               <Image src={'/images/main/2.png'} width={70} height={70} alt="interior" />
               <button className={styles.icon}>
                 <svg

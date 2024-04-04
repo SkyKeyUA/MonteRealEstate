@@ -76,6 +76,7 @@
   padding: 4px;
   gap: 10px;
   span {
+    white-space: nowrap;
     color: var(--primary);
   }
   @media (max-width: 479.98px) {

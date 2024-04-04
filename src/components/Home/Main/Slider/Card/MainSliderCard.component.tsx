@@ -8,7 +8,7 @@ export const MainSliderCardComponent: React.FC<ItemProps> = ({ image }) => {
   return (
     <div className={styles.inner}>
       <Image
-        className={styles.image}
+        className={`${styles.image} zoomAnimation`}
         src={`/images/main/slider/${image}`}
         width={710}
         height={880}
@@ -16,11 +16,15 @@ export const MainSliderCardComponent: React.FC<ItemProps> = ({ image }) => {
       />
       <div className={styles.top}>
         <div className={styles.info}>
-          <span>More than 1500 real estate properties</span>
-          <span>From $145,000 with a yield of 10% per annum</span>
+          <span className="slideUpAnimation repeatAnimation">
+            More than 1500 real estate properties
+          </span>
+          <span className="slideUpAnimation repeatAnimation">
+            From $145,000 with a yield of 10% per annum
+          </span>
         </div>
         <div className={styles.icons}>
-          <button className={`${styles.favourite} icon`}>
+          <button className={`${styles.favourite} icon scaleAnimation`}>
             <svg
               width="24"
               height="21"
@@ -35,7 +39,7 @@ export const MainSliderCardComponent: React.FC<ItemProps> = ({ image }) => {
               />
             </svg>
           </button>
-          <button className={`${styles.house} icon`}>
+          <button className={`${styles.house} icon scaleAnimation`}>
             <svg
               width="22"
               height="21"
@@ -68,7 +72,7 @@ export const MainSliderCardComponent: React.FC<ItemProps> = ({ image }) => {
       </div>
       <div className={styles.bottom}>
         <div className={styles.hidden}>More than 1500 real estate properties</div>
-        <button className={styles.items}>
+        <button className={`${styles.items} scaleAnimation`}>
           <div className={styles.item}>catalog download</div>
           <div className={styles.download}>
             <svg

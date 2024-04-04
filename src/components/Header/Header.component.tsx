@@ -10,13 +10,13 @@ export const HeaderComponent: React.FC = () => {
   return (
     <header className={styles.root}>
       <div className={styles.inner}>
-        <div className={styles.logo}>
+        <div className={`${styles.logo} slideUpAnimation`}>
           <Link href="/">
             <Image src={'/logo.png'} width={128.33} height={44} alt="Logo" />
           </Link>
         </div>
         <div className={styles.body}>
-          <button className={`${styles.map} icon`}>
+          <button className={`${styles.map} icon scaleAnimation`}>
             <svg
               width="22"
               height="20"
@@ -46,7 +46,7 @@ export const HeaderComponent: React.FC = () => {
               />
             </svg>
           </button>
-          <button className={`${styles.burger} icon`}>
+          <button className={`${styles.burger} icon scaleAnimation`}>
             <svg
               width="23"
               height="16"

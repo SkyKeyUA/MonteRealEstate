@@ -16,3 +16,94 @@
     width: 34px;
   }
 }
+
+.slideUpAnimation {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.slideDownAnimation {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.slideInLeftAnimation {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.scaleAnimation {
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.zoomAnimation {
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.fullWidthAnimation {
+  animation-name: fullWidth;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideUp {
+  from {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fullWidth {
+  0% {
+    width: 45px;
+    transform: scale(0);
+  }
+  50% {
+    width: 45px;
+    transform: scale(1);
+  }
+  100% {
+    width: 196px;
+  }
+}
