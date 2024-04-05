@@ -39,14 +39,26 @@
 .map {
   background: var(--icon-bg);
   svg {
-    width: 14.63px;
-    height: 13.3px;
+    width: 22px;
+    height: 20px;
+  }
+  @media (max-width: 479.98px) {
+    svg {
+      width: 16px;
+      height: 15px;
+    }
   }
 }
 .burger {
   background: var(--icon-bg);
   svg {
-    width: 15.52px;
-    height: 10.35px;
+    width: 23px;
+    height: 16px;
+  }
+  @media (max-width: 479.98px) {
+    svg {
+      width: 18px;
+      height: 12px;
+    }
   }
 }

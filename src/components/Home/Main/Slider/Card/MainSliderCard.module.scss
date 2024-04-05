@@ -81,19 +81,27 @@
 .favourite {
   background: inherit;
   border: 1px solid var(--primary);
+  svg {
+    width: 24px;
+    height: 21px;
+  }
   @media (max-width: 479.98px) {
     svg {
-      width: 17.2px;
-      height: 15px;
+      width: 19px;
+      height: 17px;
     }
   }
 }
 .house {
   background: var(--primary);
+  svg {
+    width: 22px;
+    height: 21px;
+  }
   @media (max-width: 479.98px) {
     svg {
-      width: 15.41px;
-      height: 15px;
+      width: 17px;
+      height: 17px;
     }
   }
 }
@@ -116,6 +124,7 @@
   font-size: 18px;
   line-height: 130%;
   max-width: 80px;
+  text-align: start;
   @media (max-width: 479.98px) {
     font-size: 14px;
   }
@@ -128,12 +137,16 @@
   justify-content: center;
   align-items: center;
   background: var(--download-bg);
+  svg {
+    width: 20px;
+    height: 20px;
+  }
   @media (max-width: 479.98px) {
     width: 28px;
     height: 27px;
     svg {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
     }
   }
 }
